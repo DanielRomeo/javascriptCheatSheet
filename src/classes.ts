@@ -13,6 +13,11 @@ interface Person {
 	lastname: string;
 }
 
+interface Dog {
+    legs: any;
+    health:  "healthy" | "stable" | "recovering";
+}
+
 const greeter = (person: Person) =>{
 	return `Hello ${person.firstname} ${person.lastname}`;
 }
